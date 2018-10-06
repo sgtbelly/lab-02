@@ -1,0 +1,24 @@
+{
+  "name": "lab-02",
+  "version": "1.0.0",
+  "description": "tools and context",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgtbelly/lab-02.git"
+  },
+  "author": "James Denton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sgtbelly/lab-02/issues"
+  },
+  "homepage": "https://github.com/sgtbelly/lab-02#readme",
+  "dependencies": {
+    "eslint": "^5.6.1",
+    "jest": "^23.6.0",
+    "test": "^0.6.0"
+  }
+}
