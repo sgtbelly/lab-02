@@ -30,6 +30,7 @@ class List {
 
   shift() {
 
+
   }
 
   unshift() {
