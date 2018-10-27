@@ -38,5 +38,49 @@ class Motorcycle extends Vehicle {
 
 }
 
+class FlyingVehicle {
 
-module.exports = {Car, Motorcycle};
+  constructor(name,wings) {
+    this.name = name;
+    this.wings = wings;
+
+  }
+
+  seats(){
+    return 'full';
+  }
+
+  space(){
+    return 'Sardines';
+  }
+
+
+}
+
+class Airplane extends FlyingVehicle {
+  constructor(name) {
+    super();
+    this.name = name;
+    this.wings = fixed;
+  }
+
+  flying(){
+    return 'ZEE PLANE! ZEE PLANE!';
+  }
+}
+
+class Helicopter extends FlyingVehicle {
+  constructor(name) {
+    super();
+    this.name = name;
+    this.wings = rotary;
+  }
+
+  loading(){
+    return 'GET TO THE CHOOPPAA!!!';
+  }
+}
+
+
+
+module.exports = {Car, Motorcycle, Airplane, Helicopter};
