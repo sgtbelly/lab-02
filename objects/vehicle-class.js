@@ -7,8 +7,8 @@ class Vehicle {
     this.wheels = wheels;
   }
 
-  drive(){
-    return 'Moving Forward';
+  email(isvalid){
+    return 'Valid Email';
   }
 
   stop(){
