@@ -1,9 +1,13 @@
 'use strict';
 
+// Vehicle factory - Parent
+
 const Vehicle = () => ({
-  drive: ()=> {return('Moving Forward')},
-  stop: ()=> {return('Stopping')},
+  drive: ()=> {return('Moving Forward');},
+  stop: ()=> {return('Stopping');},
 });
+
+// Vehicle factory - child Car
 
 function Car(name) {
   let wheels = 4;
@@ -12,6 +16,8 @@ function Car(name) {
 
   return Object.freeze(car);
 }
+
+// Vehicle factory - child Motorcycle
 
 function Motorcycle(name) {
   let wheels = 2;

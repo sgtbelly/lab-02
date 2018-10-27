@@ -1,6 +1,6 @@
 'use strict';
 
-// Vehicle Factory
+// Vehicle factory - parent
 const Vehicle = function(name, wheels) {
   this.name = name;
   this.wheels = wheels;
@@ -14,12 +14,14 @@ Vehicle.prototype.stop = () => {
   return 'Stopping';
 };
 
-// Car Constructor
+// Vehicle factory - child Car
 const Car = function(name) {
   Vehicle.call(this, name, 4);
 };
 
 Car.prototype = new Vehicle();
+
+// Vehicle factory - child Motorcycle
 
 const Motorcycle = function(name) {
   Vehicle.call(this,name,2);
@@ -31,19 +33,5 @@ Motorcycle.prototype.wheelie = () => {
   return 'Wheee!';
 };
 
-// Flying Vehicle factory
-
-const FlyingVehicle = function(name, wings) {
-  this.name = name;
-  this.wings = wings;
-};
-
-FlyingVehicle.prototype.seats = () => {
-  return 'full';
-};
-
-FlyingVehicle.prototype.space = () => {
-  return 'Sardines';
-};
 
 module.exports = {Car, Motorcycle};
