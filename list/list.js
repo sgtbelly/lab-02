@@ -28,6 +28,23 @@ class List {
     return returnValue;
   }
 
+  shift() {
+
+  }
+
+  unshift() {
+
+  }
+
+  splice() {
+
+
+  }
+
+  slice() {
+
+  }
+
 }
 
 module.exports = List;
