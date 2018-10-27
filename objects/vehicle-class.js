@@ -7,8 +7,8 @@ class Vehicle {
     this.wheels = wheels;
   }
 
-  drive(){
-    return 'Moving Forward';
+  email(isvalid){
+    return 'Valid Email';
   }
 
   stop(){
@@ -38,5 +38,98 @@ class Motorcycle extends Vehicle {
 
 }
 
+class FlyingVehicle {
 
-module.exports = {Car, Motorcycle};
+  constructor(name,wings) {
+    this.name = name;
+    this.wings = wings;
+
+  }
+
+  seats(){
+    return 'full';
+  }
+
+  space(){
+    return 'Sardines';
+  }
+
+
+}
+
+class Airplane extends FlyingVehicle {
+  constructor(name) {
+    super();
+    this.name = name;
+    this.wings = fixed;
+  }
+
+  flying(){
+    return 'ZEE PLANE! ZEE PLANE!';
+  }
+}
+
+class Helicopter extends FlyingVehicle {
+  constructor(name) {
+    super();
+    this.name = name;
+    this.wings = rotary;
+  }
+
+  loading(){
+    return 'GET TO THE CHOOPPAA!!!';
+  }
+}
+
+class SeaCreature {
+
+  constructor(name, fins) {
+    this.name = name;
+    this.fins = fins;
+
+  }
+
+  live(){
+    return 'Under the sea Under the sea';
+  }
+
+
+
+
+}
+
+class Fish extends SeaCreature {
+
+  constructor(name) {
+    super();
+    this.name = name;
+    this.fins = 2;
+  }
+
+  swimming(){
+    return 'just keep swimming, just keep swimming, swimming, swimming';
+  }
+
+  alias(){
+    return 'Dory';
+  }
+
+}
+
+class Lobster extends SeaCreature {
+
+  constructor(name) {
+    super();
+    this.name = name;
+    this.fins = 0;
+  }
+
+  alias(){
+    return 'Sebastian';
+  }
+
+  home(){
+    return 'My Belly';
+  }
+}
+module.exports = {Car, Motorcycle, Airplane, Helicopter, SeaCreature};
