@@ -81,6 +81,55 @@ class Helicopter extends FlyingVehicle {
   }
 }
 
+class SeaCreature {
+
+  constructor(name, fins) {
+    this.name = name;
+    this.fins = fins;
+
+  }
+
+  live(){
+    return 'Under the sea Under the sea';
+  }
 
 
-module.exports = {Car, Motorcycle, Airplane, Helicopter};
+
+
+}
+
+class Fish extends SeaCreature {
+
+  constructor(name) {
+    super();
+    this.name = name;
+    this.fins = 2;
+  }
+
+  swimming(){
+    return 'just keep swimming, just keep swimming, swimming, swimming';
+  }
+
+  alias(){
+    return 'Dory';
+  }
+
+}
+
+class Lobster extends SeaCreature {
+
+  constructor(name) {
+    super();
+    this.name = name;
+    this.fins = 0;
+  }
+
+  alias(){
+    return 'Sebastian';
+  }
+
+  home(){
+    return 'My Belly';
+  }
+}
+module.exports = {Car, Motorcycle, Airplane, Helicopter, SeaCreature};
