@@ -29,22 +29,31 @@ class List {
   }
 
   shift() {
-
-
-
+    let returnValue = this.data[this.length];
+    delete this.data[this.length];
+    this.length--;
+    return returnValue;
   }
 
   unshift() {
-
+    let returnValue = this.data[this.length];
+    delete this.data[this.length];
+    this.length--;
+    return returnValue;
   }
 
   splice() {
-
-
+    let returnValue = this.data[this.length];
+    delete this.data[this.length];
+    this.length--;
+    return returnValue;
   }
 
   slice() {
-
+    let returnValue = this.data[this.length];
+    delete this.data[this.length];
+    this.length--;
+    return returnValue;
   }
 
 }

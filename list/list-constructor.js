@@ -24,4 +24,32 @@ List.prototype.pop = function() {
   return returnValue;
 };
 
+List.prototype.shift = function() {
+  let returnValue = this.data[this.length];
+  delete this.data[this.length];
+  this.length--;
+  return returnValue;
+};
+
+List.prototype.unshift = function() {
+  let returnValue = this.data[this.length];
+  delete this.data[this.length];
+  this.length--;
+  return returnValue;
+};
+
+List.prototype.splice = function() {
+  let returnValue = this.data[this.length];
+  delete this.data[this.length];
+  this.length--;
+  return returnValue;
+};
+
+List.prototype.slice = function() {
+  let returnValue = this.data[this.length];
+  delete this.data[this.length];
+  this.length--;
+  return returnValue;
+};
+
 module.exports = List;
