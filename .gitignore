@@ -1,9 +1,9 @@
 
 # Created by https://www.gitignore.io/api/vim,osx,linux,node
-db 
-temp 
+db
+temp
 data
-.env 
+.env
 *.env
 
 ### Vim ###
@@ -66,6 +66,7 @@ Temporary Items
 logs
 *.log
 npm-debug.log*
+
 
 # Runtime data
 pids
