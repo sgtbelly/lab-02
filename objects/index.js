@@ -3,10 +3,16 @@
 // const Vehicle = require('./vehicle-constructor.js');
 // const Vehicle = require('./vehicle-class.js');
 const Vehicle = require('./vehicle-factory.js');
+
+// const FlyingVehicle = require('./flyingvehicle-class.js')
+// const FlyingVehicle = require('./flyingvehicle-constructor.js');
 const FlyingVehicle = require('./flyingvehicle-factory.js');
+
+// const SeaCreature = require('./seacreature-class.js');
+// const SeaCreature = require('./seacreature-constructor.js');
 const SeaCreature = require('./seacreature-factory.js');
 
-// Implement a car, motorcycle, flying vehicle, and seacreature
+// Implement a car, motorcycle, flying vehicle, and sea creatures
 const mazda = new Vehicle.Car('Mazda 3');
 console.log(mazda.name, mazda.drive(), mazda.stop());
 
@@ -19,5 +25,8 @@ console.log(apache.name, apache.seats(), apache.space(), apache.loading());
 const cropduster = new FlyingVehicle.Airplane('Cropduster');
 console.log(cropduster.name, cropduster.seats(), cropduster.space(), cropduster.flying());
 
-const sebastian = new SeaCreature.Fish()
-console.log(sebastian.name, sebastian.)
+const nemo = new SeaCreature.Fish('Nemo');
+console.log(nemo.name, nemo.fins, nemo.live(), nemo.swimming(), nemo.alias());
+
+const larry = new SeaCreature.Lobster('Larry');
+console.log(larry.name, larry.fins, larry.live(), larry.alias(), larry.home());
